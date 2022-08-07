@@ -1,0 +1,45 @@
+.header > h1{
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    grid-area: titulo;
+    color: #ffffff;
+    background-color: #000696;
+}
+.menu_sandwich{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: black;
+    background-color: #000696;
+}
+
+
+.header{
+    width: clamp(200px, 1440px, 2000px);
+    display: grid;
+    grid-template-areas: 
+        "titulo"
+        "botao"
+        "menu";
+    grid-template-columns: 20% 5% 25% 25% auto;
+    background-color: #000696;
+}
+.menuH{
+    margin-top: 50px;
+    grid-area: titulo;
+    background-color: #060b26;
+    background-color: #000696;
+}
+.icone1{
+    margin-left: .5rem;
+    background-color: #000696;
+    color: #EBFF00;
+}
+
+
+.icone2{
+    background-color: #000696;
+}

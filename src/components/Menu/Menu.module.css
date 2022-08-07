@@ -1,0 +1,48 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: -200%;
+    transition: 850ms;
+    background-color: #008080
+
+}
+
+.menu_ativo{
+    transition: 350ms;
+    background-color: #008080;
+    width: 150px;
+    height: clamp(550px, 570px, 100vh);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+}
+.link_menu{
+    margin-left: .5rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    background: #008080;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+
+.icone3{
+    margin-right: 5px;
+    background: #008080;
+}
+
+.redes_sociais{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #008080;
+}
+
+.icone4{
+    background-color: #008080;
+}
