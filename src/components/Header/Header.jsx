@@ -1,22 +1,20 @@
-import React, {useState} from 'react'
+import React, {useState, createContext} from 'react'
 import { Link } from 'react-router-dom'
 import Menu from '../Menu/Menu'
 import S from './Header.module.css'
 import * as FaIcons from "react-icons/fa";
 
-const Header = () => {
-    const [menuValor, setMenu] = useState(false)
+
+
+const Header = ({menuValor}) => {
 
     function handleSetMenu(){
-        if (menuValor){
-            setMenu(false)
-            console.log("Funcinando")
+        if (menuValor[0]){
+            menuValor[1](false)
         } else{
-            console.log("Funcinando")
-            setMenu(true)
+            menuValor[1](true)
         }
     }
-
   return (
     <div className={S.header}>
         <h1>Empresa Foda <FaIcons.FaDesktop size={40} className={S.icone1}/></h1>
@@ -24,10 +22,10 @@ const Header = () => {
             <FaIcons.FaBars size={40} className={S.icone2}/>
         </Link>
         <div className={S.menuH}>
-            <Menu ativo={menuValor}/>       
+            <Menu ativo={menuValor[0]}/>       
         </div>
     </div>
   )
 }
 
-export default Header
+export default Header;

@@ -11,15 +11,16 @@
     transition: 350ms;
     background-color: #008080;
     width: 150px;
-    height: clamp(550px, 570px, 100vh);
+    height: clamp(550px, 6000px, 100vh);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
+    overflow: auto;
 }
 .link_menu{
-    margin-left: .5rem;
+    margin-left: .6rem;
     width: 90%;
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@
     display: flex;
     justify-content: space-around;
     background-color: #008080;
+    margin-bottom: 50px;
 }
 
 .icone4{
