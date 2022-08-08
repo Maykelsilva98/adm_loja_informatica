@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap");
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: grid;
+  background-color: #010081;
+}
+
+.heading {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: xxx-large;
+  margin-top: auto;
+  color: white;
+}
+.logo {
+  width: 9%;
+}
