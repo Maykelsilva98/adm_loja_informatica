@@ -1,0 +1,59 @@
+.produtos{
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+    transition: 350ms;
+}
+
+.conteudo{
+    grid-area: conteudo;
+    display: grid;
+    grid-template-areas: 
+        "descricao"
+        "lista_produtos"
+        "transicao";
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto;
+}
+
+.produto_individual{
+    grid-area: lista_produtos;
+    display: flex;
+    flex-direction: column;
+}
+.produto_individual > h2{
+    margin-bottom: 1.5rem;
+    font-size: 35px;
+}
+.descricao{
+    grid-area: descricao;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dia{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icone5{
+    margin-bottom: .4rem;
+    color: #008080;
+}
+
+.input{
+    border-radius: 5px;
+    height: 20%;
+    margin-right: 50px;
+}
+
+.pesquisa{
+  width: 280px;
+}
