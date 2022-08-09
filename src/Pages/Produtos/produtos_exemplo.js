@@ -16,5 +16,6 @@ for(let i = 0; i<5; i++){
     arr.push(obj)
 }
 
-export {arr}
+console.log(arr.slice(0,3))
+
 
