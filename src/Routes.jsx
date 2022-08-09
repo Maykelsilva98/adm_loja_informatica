@@ -4,6 +4,7 @@ import Dashboard from './Pages/Dashboard/Dashboard'
 import Home from './Pages/Home/Home'
 import React, {useState} from 'react'
 import Formulario from './Pages/Formulario/Formulario'
+import Produtos from './Pages/Produtos/Produtos'
 
 
 function Routes() {
@@ -13,6 +14,7 @@ function Routes() {
         <Header menuValor={[menuAtivo, setMenuAtivo]}/>
       <Switch>
         <Route path='/' element={<Home/>}/>
+        <Route path='/produtos' element={<Produtos menuValor={menuAtivo}/>}/>
         <Route path='/dashboard' element={<Dashboard menuValor={menuAtivo}/>}/>
         <Route path='/formulario' element={<Formulario menuValor={menuAtivo}/>}/>
       </Switch>

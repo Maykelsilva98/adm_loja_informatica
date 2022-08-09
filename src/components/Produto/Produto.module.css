@@ -1,0 +1,46 @@
+.produto{
+    width: clamp(700px, 1000px, 2400px);
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: 350ms;
+}
+
+.produto_atibutos{
+    padding: .5rem;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 45% 10% 10% 10% 10% auto;
+    align-items: center;
+    font-size: 15px;
+}
+
+.descricao{
+    padding-top: 1rem;
+    display: none;
+    grid-template-columns: 80% auto auto;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem ;
+}
+
+.descricao > p{
+    background-color: aliceblue;
+}
+
+.editar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.editar > a{
+    text-decoration: none;
+    color: black;
+}
+
+.editar > a:hover{
+    border-bottom: solid 2px #000696;
+    transition: 350ms;
+}
