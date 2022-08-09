@@ -9,40 +9,42 @@ const Formulario = () => {
         <div className={style.Nome}>
         <label  for="nome">Nome</label>
         <br></br>
-        <input style={{width: '160%' , borderRadius: '2%'}} type="text" id="nome" name="nome"></input>
+        <input style={{width: '30%' , borderRadius: ''}} type="text" id="nome" name="nome"></input>
         <br></br>
         </div>
         
-
-        <label for="marca">Marca</label>
+        <div className={style.seis}>
+          <label for="marca">Marca</label>
         <br></br>
-        <input type="text" id="marca" name="marca"></input>
+        <input style={{width: '10%' , borderRadius: ''}} type="text" id="marca" name="marca"></input>
         <br></br>
 
         <label for="valor">Valor</label>
         <br></br>
-        <input type="number" id="valor" name="valor"></input>
+        <input style={{width: '10%' , borderRadius: ''}}type="number" id="valor" name="valor"></input>
         <br></br>
 
         <label for="ID">Identificação</label>
         <br></br>
-        <input type="number" id="ID" name="ID"></input>
+        <input style={{width: '10%' , borderRadius: ''}}type="number" id="ID" name="ID"></input>
         <br></br>
 
         <label for="cor">Cor</label>
         <br></br>
-        <input type="text" id="cor" name="cor"></input>
+        <input style={{width: '10%' , borderRadius: ''}}type="text" id="cor" name="cor"></input>
         <br></br>
 
         <label for="dimensões">Dimensões</label>
         <br></br>
-        <input type="text" id="dimensões" name="dimensões"></input>
+        <input style={{width: '10%' , borderRadius: ''}}type="text" id="dimensões" name="dimensões"></input>
         <br></br>
 
         <label for="peso">Peso</label>
         <br></br>
-        <input type="text" id="peso" name="peso"></input>
+        <input style={{width: '10%' , borderRadius: ''}}type="text" id="peso" name="peso"></input>
         <br></br>
+   </div> 
+
 
         <label for="descrição">Descrição</label>
         <br></br>
