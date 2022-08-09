@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import * as FaIcons from "react-icons/fa";
 import Produto from '../../components/Produto/Produto'
 import S from './Produtos.module.css'
-import { getProdutos , getProdutosPorId } from '../../service/api';
+import { getProdutos , getProdutosPorId} from '../../service/api';
 
 const Produtos = ({menuValor}) => {
 
