@@ -5,7 +5,7 @@ const instancia = axios.create({
 })
 
 export const getProdutos = async()=>{
-    const response = await instancia.get('/produtos')
+    const response = await instancia.get('/npmprodutos')
     const json = await response.data 
     return json
 }
@@ -19,3 +19,7 @@ export const getProdutosPorId = async(id)=>{
 export const deleteProduto = async (id) => {
     const response = await instancia.delete(`/produtos/${id}`);
   };
+
+export const postProduto = async (id) => {
+const response = await instancia.post
+}
