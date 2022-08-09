@@ -1,0 +1,23 @@
+.H2{
+    width: 400vh;
+    height: 100vh;
+    border: solid black;
+}
+
+.formulario {
+  display:grid;
+  width:100%;
+ 
+  margin: 125px 200px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+    
+}
+
+.Nome {
+    width: 30%;
+    border-radius: 40%;
+}

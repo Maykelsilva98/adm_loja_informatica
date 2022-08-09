@@ -2,13 +2,13 @@
     position: fixed;
     top: 0;
     left: -200%;
-    transition: 850ms;
+    transition: all 0.5s ease;
     background-color: #008080
 
 }
 
 .menu_ativo{
-    transition: 350ms;
+    transition: all 0.5s ease;
     background-color: #008080;
     width: 150px;
     height: clamp(550px, 6000px, 100vh);
