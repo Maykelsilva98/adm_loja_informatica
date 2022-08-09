@@ -5,7 +5,7 @@ const instancia = axios.create({
 })
 
 export const getProdutos = async()=>{
-    const response = await instancia.get('/npmprodutos')
+    const response = await instancia.get('/produtos')
     const json = await response.data 
     return json
 }
