@@ -20,6 +20,8 @@ export const deleteProduto = async (id) => {
     const response = await instancia.delete(`/produtos/${id}`);
   };
 
-export const postProduto = async (id) => {
-const response = await instancia.post
+export const postProduto = async (body) => {
+    const response = await instancia.post(`/produtos/`, body)
+    const json = await response.data.msg;
+    return json;
 }
