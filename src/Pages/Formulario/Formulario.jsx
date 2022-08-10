@@ -7,7 +7,7 @@ const Formulario = () => {
   const [imageUrl, setImageUrl] = useState();
   const [dadosForm, setDadosForm] = useState({
     id: "",
-    nome: "Nathi",
+    nome: "",
     cor: "",
     marca: "",
     peso: "",
@@ -15,7 +15,6 @@ const Formulario = () => {
     valor: "",
     descrição: "",
     imagem_url: "",
-
   });
 
   function handleChange(target, key) {
@@ -24,9 +23,8 @@ const Formulario = () => {
     console.log (dadosForm)
   }
 
-  async function handleSave() {
-    const msg = await postProduto(dadosForm);
-    setImageUrl(msg)
+  function handleSave() {
+    postProduto(dadosForm)
   }
 
   return (
@@ -63,8 +61,8 @@ const Formulario = () => {
         <div className={styles.wrapper}>
           <label for="ID">Identificação</label>
 
-          <input type="number" id="ID" name="ID" value={dadosForm.ID}
-            onChange={({target})=>{handleChange(target, 'ID')}}></input>
+          <input type="number" id="ID" name="ID" value={dadosForm.id}
+            onChange={({target})=>{handleChange(target, 'id')}}></input>
         </div>
 
         <div className={styles.wrapper}>
@@ -117,11 +115,10 @@ const Formulario = () => {
           ></input>
         </div>
 
-        <h1 onClick={handleSave()}>teste{imageUrl}</h1>
-        <button onClick={()=>{handleSave()}}>{imageUrl}</button>
+      
+        <button type="" onClick={handleSave}>Enviar</button>
         <input type="reset" value="CANCELAR" />
       </form>
-
       {/* <img src={imageUrl} alt="Error" className={styles.imagestest} /> */}
     </div>
   );
