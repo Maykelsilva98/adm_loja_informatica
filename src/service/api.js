@@ -20,6 +20,10 @@ export const deleteProduto = async (id) => {
     const response = await instancia.delete(`/produtos/${id}`);
   };
 
+export const putProduto = async (id, body) =>{
+    const response = await instancia.put(`/produtos/${id}`, body)
+}
+
 export const postProduto = async (id) => {
 const response = await instancia.post
 }

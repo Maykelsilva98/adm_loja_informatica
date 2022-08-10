@@ -17,7 +17,7 @@ const Header = ({menuValor}) => {
     }
   return (
     <div className={S.header}>
-        <h1>Empresa Foda <FaIcons.FaDesktop size={40} className={S.icone1}/></h1>
+        <h1>InfoTástica<FaIcons.FaDesktop size={40} className={S.icone1}/></h1>
         <Link to="#" onClick={()=>handleSetMenu()}  className={S.menu_sandwich}>
             <FaIcons.FaBars size={40} className={S.icone2}/>
         </Link>

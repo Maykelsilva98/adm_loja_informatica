@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import S from './Produto.module.css'
+import { Link } from 'react-router-dom'
 
 const Produto = ({dado}) => {
     const [descricaoAtivo, setDesscricaoAtivo] = useState(false)
@@ -26,7 +27,7 @@ const Produto = ({dado}) => {
             <p>{DESCRICAO}</p>
             <img src={IMAGEM_URL} alt="" width={'100px'} height={'100px'}/>
             <div className={S.editar}>
-                <a href="">Editar</a>
+                <Link to={`/formulario/${ID}`}>Editar</Link>
                 
             </div>
         </article>
