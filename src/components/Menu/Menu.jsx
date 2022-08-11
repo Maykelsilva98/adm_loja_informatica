@@ -8,7 +8,7 @@ const Menu = ({ativo}) => {
     <div className={S.menu_container}>
         <nav className={ativo ? S.menu_ativo : S.menu}>
             <Link to="#" className={S.link_menu}> <FaIcons.FaChartBar className={S.icone3}/>Dashboards</Link>
-            <Link to="#" className={S.link_menu}> <FaIcons.FaShoppingBag className={S.icone3}/>Produtos</Link>
+            <Link to="/produtos" className={S.link_menu}> <FaIcons.FaShoppingBag className={S.icone3}/>Produtos</Link>
             <Link to="#" className={S.link_menu}> <FaIcons.FaBullhorn className={S.icone3}/> Sobre Nós</Link>
             <Link to="#" className={S.link_menu}> <FaIcons.FaPeopleArrows className={S.icone3}/>Clientes</Link>
             <Link to="#" className={S.link_menu}> <FaIcons.FaDollarSign className={S.icone3}/>Finanças</Link>

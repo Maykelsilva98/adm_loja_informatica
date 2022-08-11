@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Produto = ({dado}) => {
     const [descricaoAtivo, setDesscricaoAtivo] = useState(false)
-    const {ID, NOME, COR, MARCA, PESO, TAMANHO, VALOR, DESCRICAO, IMAGEM_URL} =  dado
+    const {id, nome, cor, marca, peso, tamanho, valor, descricao, imagem_url} =  dado
 
     function handleSetDescricaoAtivo(){
         if (descricaoAtivo){
@@ -16,18 +16,18 @@ const Produto = ({dado}) => {
   return (
     <div className={S.produto} onClick={()=> handleSetDescricaoAtivo()}>
         <article className={S.produto_atibutos}>
-            <p>Nome: {NOME}</p>
-            <p>Marca: {MARCA}</p>
-            <p>Cor: {COR}</p>
-            <p>Peso: {PESO}</p>
-            <p>Dimensões: {TAMANHO}</p>
-            <p>Valor: R${VALOR}</p>
+            <p>Nome: {nome}</p>
+            <p>Marca: {marca}</p>
+            <p>Cor: {cor}</p>
+            <p>Peso: {peso}</p>
+            <p>Dimensões: {tamanho}</p>
+            <p>Valor: R${valor}</p>
         </article>
         <article className={S.descricao} style={descricaoAtivo? {display: 'grid'}: {display: 'none'}}>
-            <p>{DESCRICAO}</p>
-            <img src={IMAGEM_URL} alt="" width={'100px'} height={'100px'}/>
+            <p>{descricao}</p>
+            <img src={imagem_url} alt="" width={'100px'} height={'100px'}/>
             <div className={S.editar}>
-                <Link to={`/formulario/${ID}`}>Editar</Link>
+                <Link to={`/formulario/${id}`}>Editar</Link>
                 
             </div>
         </article>

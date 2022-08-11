@@ -3,6 +3,7 @@ import styles from "./Formulario_put.module.scss";
 // import * as FaIcons from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { putProduto, getProdutosPorId } from "../../service/api";
+import { Link } from 'react-router-dom'
 
 const Formulario_put = () => {
   const [imageUrl, setImageUrl] = useState("");
@@ -109,7 +110,7 @@ const Formulario_put = () => {
 
         {/* <button type="submit" value="ENVIAR" /> */}
         <button type="" onClick={handlePut()}>Enviar</button>
-        <button type="">Cancelar</button>
+        <button type="" onClick={<Link to={`/produtos`}>Editar</Link>}>Cancelar</button>
         {/* <input type="reset" value="CANCELAR" /> */}
       </form>
 

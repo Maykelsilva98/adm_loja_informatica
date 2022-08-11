@@ -44,7 +44,7 @@ const Produtos = ({menuValor}) => {
         <div className={S.produto_individual}>
         <h2>Produtos</h2>   
           {req.map((produto)=>{
-            return <Produto key={produto.ID} dado={produto}/>
+            return <Produto key={produto.id} dado={produto}/>
           })}
         </div>
       </div>
