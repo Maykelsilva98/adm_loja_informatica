@@ -1,0 +1,41 @@
+.H2 {
+	width: 400vh;
+	height: 100vh;
+	border: solid black;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+
+	width: 100%;
+
+	padding: 125px 200px;
+}
+
+.wrapper {
+	display: grid;
+	gap: 10rme;
+
+	&__two {
+		grid-column: 1 / span 2;
+	}
+
+	label {
+		color: #d9d9d9;
+	}
+}
+
+:is(input, textarea) {
+	border: 0;
+	border-radius: 0.5rem;
+	background-color: #d9d9d9;
+
+	padding: 0.25rem 0.5rem;
+}
+
+.imagestest {
+	width: 20rem;
+	aspect-ratio: 3/4;
+}
